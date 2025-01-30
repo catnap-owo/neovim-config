@@ -46,11 +46,11 @@ autocmd('LspProgress', {
     if not flash_hint then
       return
     end
+    flash_hint = flash_hint + 1
+    vim.lsp.inlay_hint.enable(true, nil)
     if flash_hint > 200 then
       flash_hint = nil
     end
-    flash_hint = flash_hint + 1
-    vim.lsp.inlay_hint.enable(true, nil)
   end
 })
 
