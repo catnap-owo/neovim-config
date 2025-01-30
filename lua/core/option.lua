@@ -1,5 +1,7 @@
 local opt = vim.opt
 
+opt.splitright = true
+
 opt.number = true
 
 opt.backup = false
