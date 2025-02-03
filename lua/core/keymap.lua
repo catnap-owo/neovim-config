@@ -2,6 +2,9 @@ local map = vim.keymap
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+map.set('v', 'J', ':m \'>+1<CR>gv=gv')
+map.set('v', 'K', ':m \'<-2<CR>gv=gv')
+
 map.set('n', '<leader>\\', ':NvimTreeFocus<CR>', { silent = true })
 map.set('n', '<leader>tt', ':NvimTreeClose<CR>', { silent = true })
 
