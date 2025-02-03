@@ -38,14 +38,19 @@ cmp.setup({
     -- completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
   },
+  experimental = {
+    ghost_text = true,
+  },
   mapping = cmp.mapping.preset.insert({
     ['<C-k>'] = cmp.mapping.select_prev_item (),
     ['<C-j>'] = cmp.mapping.select_next_item (),
     ['<C-h>'] = cmp.mapping.scroll_docs(-4),
     ['<C-l>'] = cmp.mapping.scroll_docs(4),
-    ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-Space>'] = cmp.mapping({
+      i = cmp.mapping.abort(),
+      c = cmp.mapping.close(),
+    }),
     ['<C-,>'] = cmp.mapping(cmp.mapping.complete (), {'i', 'c'}),
-    ['<C-.>'] = cmp.mapping.abort(),
     ['<Tab>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     ['<C-CR>'] = cmp.mapping(
       function(fallback)
