@@ -15,6 +15,7 @@ local plugs = {
   lualine = 'nvim-lualine/lualine.nvim',
   'nvim-lua/plenary.nvim',
   telescope = 'nvim-telescope/telescope.nvim',
+  indentmini = 'nvimdev/indentmini.nvim',
 }
 
 local ensure_packer = function()
