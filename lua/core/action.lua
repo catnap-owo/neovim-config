@@ -36,7 +36,7 @@ local flash_hint = 0
 autocmd('LspAttach', {
   callback = function(_)
     flash_hint = 0
-    vim.cmd([[highlight LspInlayHint guibg=#3a3a3a]])
+    vim.cmd([[highlight LspInlayHint guibg=#474747]])
   end
 })
 
