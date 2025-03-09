@@ -21,7 +21,7 @@ autocmd('FileType', {
   desc = 'set space num when pressing tab based on the editing file type',
   callback = function(file)
     local type = file['match']
-    if type == 'lua' then
+    if type == 'lua' or type == 'nix' then
       vim.opt.shiftwidth = 2
     else
       vim.opt.shiftwidth = 4
