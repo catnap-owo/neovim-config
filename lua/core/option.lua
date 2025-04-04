@@ -21,4 +21,3 @@ opt.wrap = false
 opt.signcolumn = 'yes'
 
 os.setlocale('C')
-

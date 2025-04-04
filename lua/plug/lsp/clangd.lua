@@ -10,7 +10,7 @@ lspconfig.clangd.setup {
     -- 标记compelie_commands.json文件的目录位置
     '--compile-commands-dir=build',
     -- 同时开启的任务数量
-    '-j=32',
+    '-j=8',
     -- 更详细的补全内容
     '--completion-style=detailed',
     -- 禁止补全头文件
