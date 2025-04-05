@@ -9,7 +9,7 @@ local kind_icons = {
   Variable = '',
   Class = '',
   Interface = '',
-  Module = '',
+  Module = '󰅩',
   Property = '',
   Unit = 'U',
   Value = 'V',
@@ -23,7 +23,7 @@ local kind_icons = {
   EnumMember = '',
   Constant = '',
   Struct = '',
-  Event = '',
+  Event = '󰨄',
   Operator = '',
   TypeParameter = '',
 }
