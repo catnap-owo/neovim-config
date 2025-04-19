@@ -29,7 +29,8 @@ autocmd('FileType', {
 autocmd('LspProgress', {
   desc = 'set LSP inlay hint style',
   callback = function()
-    vim.cmd([[highlight LspInlayHint cterm=italic gui=italic guifg=#928374 guibg=#333333]])
+    -- :highlight LspInlayHint cterm=italic gui=italic guifg=#928374 guibg=#333333
+    vim.api.nvim_set_hl(0, 'LspInlayHint', { italic = true, fg = '#928374', bg = '#333333' })
   end,
 })
 --------------------------------------------------------------------------------------

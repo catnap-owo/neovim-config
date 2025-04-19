@@ -1,7 +1,6 @@
 local plugs = {
   'nvim-tree/nvim-web-devicons',
   gruvbox = "ellisonleao/gruvbox.nvim",
-  toggleterm = 'akinsho/toggleterm.nvim',
   autopairs = 'windwp/nvim-autopairs',
   tree = 'nvim-tree/nvim-tree.lua',
   lsp = 'neovim/nvim-lspconfig',
